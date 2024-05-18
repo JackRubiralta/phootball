@@ -86,7 +86,7 @@ def attract_ball(player: Player, ball: Ball) -> None:
     distance_to_ball = vec.dist(player.position, ball.position) - ball.radius
     if distance_to_ball < player.attraction_radius:
         # Apply a slight attraction force to the ball
-        attraction_force = (player.position - ball.position) * 0.005  # Arbitrary small force value
+        attraction_force = (player.position - ball.position) * 0.003  # Arbitrary small force value
         ball.velocity = ball.velocity + attraction_force
 
 def shoot(player: Player, ball: Ball) -> None:
